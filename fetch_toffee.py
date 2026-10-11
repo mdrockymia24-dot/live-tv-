@@ -59,18 +59,11 @@ BASE_HEADERS = {
 # যা Toffee-র নিজস্ব সার্ভারে না থাকায় লাইভ ক্লাউড ও BDIX নোড থেকে যুক্ত করা হয়েছে
 # ---------------------------------------------------------------------------
 EXTENDED_CHANNELS = [
-    # --- বাংলা স্পেশাল চ্যানেল ---
     {
         "name": "Star Jalsha HD",
         "category": "Bangla Entertainment",
         "logo": "https://i.imgur.com/IlufzR5.png",
         "link": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starjalsha.smil/chunklist_b1928000.m3u8",
-    },
-    {
-        "name": "Star Jalsha",
-        "category": "Bangla Entertainment",
-        "logo": "https://i.imgur.com/IlufzR5.png",
-        "link": "http://198.195.239.50:8095/starJalsha/index.m3u8",
     },
     {
         "name": "Colors Bangla",
@@ -79,10 +72,10 @@ EXTENDED_CHANNELS = [
         "link": "http://103.114.11.37:8081/Colors-bangla/index.m3u8",
     },
     {
-        "name": "Colors Bangla HD",
-        "category": "Bangla Entertainment",
-        "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_BANGLA/images/LOGO_HD/image.png",
-        "link": "http://198.195.239.50:8095/COLORS.BANGLA.HD/index.m3u8",
+        "name": "Colors Bangla Cinema",
+        "category": "Movie Channels",
+        "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_BANGLA_CINEMA/images/LOGO_HD/image.png",
+        "link": "http://103.114.11.37:8081/Colors-bangla-cinema/index.m3u8",
     },
     {
         "name": "Enterr10 Bangla",
@@ -91,166 +84,16 @@ EXTENDED_CHANNELS = [
         "link": "https://amg01448-samsungin-enterr10bangla-samsungin-ad-gg.amagi.tv/playlist/amg01448-samsungin-enterr10bangla-samsungin/playlist.m3u8",
     },
     {
-        "name": "Enterr10 Bangla (Live Mirror)",
-        "category": "Bangla Entertainment",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/enterr10-bangla.png",
-        "link": "http://198.195.239.50:8095/ENTER10.BANGLA/index.m3u8",
-    },
-    {
-        "name": "Sangeet Bangla",
-        "category": "Bangla Music",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/sangeet-bangla.png",
-        "link": "http://198.195.239.50:8095/sangeetBangla/index.m3u8",
-    },
-    # --- মুভি চ্যানেল (বাংলা ও হিন্দি) ---
-    {
-        "name": "Jalsha Movies",
-        "category": "Movie Channels",
-        "logo": "https://i.imgur.com/25eWjX2.png",
-        "link": "http://198.195.239.50:8095/jalshaMovies/index.m3u8",
-    },
-    {
-        "name": "Colors Bangla Cinema",
-        "category": "Movie Channels",
-        "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_BANGLA_CINEMA/images/LOGO_HD/image.png",
-        "link": "http://103.114.11.37:8081/Colors-bangla-cinema/index.m3u8",
-    },
-    {
-        "name": "Zee Bangla Cinema HD",
-        "category": "Movie Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/zee-bangla-cinema.png",
-        "link": "http://198.195.239.50:8095/ZEE.BANGLA.CINEMA/index.m3u8",
-    },
-    {
         "name": "Star Gold HD",
         "category": "Movie Channels",
         "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/star-gold.png",
         "link": "http://198.195.239.50:8095/STAR.GOLD.HD/index.m3u8",
     },
     {
-        "name": "Sony Max HD",
-        "category": "Movie Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/sony-max.png",
-        "link": "http://198.195.239.50:8095/SONY.MAX.HD/index.m3u8",
-    },
-    {
         "name": "Zee Cinema HD",
         "category": "Movie Channels",
         "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/zee-cinema.png",
-        "link": "http://198.195.239.50:8095/ZEE.CINEMA.HD/index.m3u8",
-    },
-    {
-        "name": "Colors Cineplex HD",
-        "category": "Movie Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/colors-cineplex.png",
-        "link": "http://198.195.239.50:8095/COLORS.CINEPLEX.HD/index.m3u8",
-    },
-    # --- হিন্দি এন্টারটেইনমেন্ট ও সিরিয়াল ---
-    {
-        "name": "Star Plus HD",
-        "category": "Hindi Entertainment",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/star-plus.png",
-        "link": "http://198.195.239.50:8095/STAR.PLUS.HD/index.m3u8",
-    },
-    {
-        "name": "Star Bharat HD",
-        "category": "Hindi Entertainment",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/star-bharat.png",
-        "link": "http://198.195.239.50:8095/STAR.BHARAT.HD/index.m3u8",
-    },
-    {
-        "name": "Colors TV HD",
-        "category": "Hindi Entertainment",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/colors.png",
-        "link": "http://198.195.239.50:8095/COLORS.HD/index.m3u8",
-    },
-    {
-        "name": "Zee TV HD",
-        "category": "Hindi Entertainment",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/zee-tv.png",
-        "link": "http://198.195.239.50:8095/ZEE.TV.HD/index.m3u8",
-    },
-    # --- বাচ্চাদের কার্টুন চ্যানেল ---
-    {
-        "name": "Cartoon Network",
-        "category": "Kids Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/cartoon-network.png",
-        "link": "http://198.195.239.50:8095/cartoonNetwork/index.m3u8",
-    },
-    {
-        "name": "Pogo",
-        "category": "Kids Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/pogo.png",
-        "link": "http://198.195.239.50:8095/pogo/index.m3u8",
-    },
-    {
-        "name": "Nickelodeon",
-        "category": "Kids Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/nick.png",
-        "link": "http://198.195.239.50:8095/nick/index.m3u8",
-    },
-    {
-        "name": "Sonic Nickelodeon",
-        "category": "Kids Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/sonic.png",
-        "link": "http://198.195.239.50:8095/sonic/index.m3u8",
-    },
-    {
-        "name": "Hungama TV",
-        "category": "Kids Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/hungama.png",
-        "link": "http://198.195.239.50:8095/HUNGAMA/index.m3u8",
-    },
-    # --- তথ্যচিত্র ও ডিসকভারি ---
-    {
-        "name": "Discovery Channel",
-        "category": "Infotainment Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/discovery.png",
-        "link": "http://198.195.239.50:8095/discovery/index.m3u8",
-    },
-    {
-        "name": "Animal Planet",
-        "category": "Infotainment Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/animal-planet.png",
-        "link": "http://198.195.239.50:8095/animalPlanet/index.m3u8",
-    },
-    {
-        "name": "National Geographic",
-        "category": "Infotainment Channels",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/national-geographic.png",
-        "link": "http://198.195.239.50:8095/nationalGeographic/index.m3u8",
-    },
-    # --- হলিউড মুভি চ্যানেল (English Movies HD) ---
-    {
-        "name": "Star Movies HD",
-        "category": "Hollywood Movies",
-        "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES_HD/images/LOGO_HD/image.png",
-        "link": "http://198.195.239.50:8095/STAR.MOVIES.HD/index.m3u8",
-    },
-    {
-        "name": "Sony Pix HD",
-        "category": "Hollywood Movies",
-        "logo": "https://i.imgur.com/yF1E2mN.png",
-        "link": "http://198.195.239.50:8095/SONY.PIX.HD/index.m3u8",
-    },
-    {
-        "name": "Movies Now HD",
-        "category": "Hollywood Movies",
-        "logo": "https://raw.githubusercontent.com/saeidrahmanbd/BDIX-IPTV/main/logos/movies-now.png",
-        "link": "http://198.195.239.50:8095/MOVIES.NOW.HD/index.m3u8",
-    },
-    {
-        "name": "MNX HD",
-        "category": "Hollywood Movies",
-        "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MNX_HD/images/LOGO_HD/image.png",
-        "link": "http://198.195.239.50:8095/MNX.HD/index.m3u8",
-    },
-    # --- লাইভ ক্রিকেট ও স্পোর্টস ---
-    {
-        "name": "A Sports HD",
-        "category": "Sports HD",
-        "logo": "https://arydigital.tv/wp-content/uploads/2021/10/A-sports-logo.png",
-        "link": "http://198.195.239.50:8095/A.SPORTS.HD/index.m3u8",
+        "link": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:zeecinemaapachd.smil/chunklist_b2628000.m3u8",
     },
 ]
 
@@ -670,8 +513,9 @@ def build_m3u(
         )
         lines.append(f"#EXTVLCOPT:http-user-agent={ua_str}")
         lines.append("#EXTVLCOPT:http-reconnect=true")
-        lines.append("#EXTVLCOPT:network-caching=6000")
-        lines.append("#EXTVLCOPT:live-caching=6000")
+        cache_ms = 10000 if "gold" in k_name or "star" in k_name else 6000
+        lines.append(f"#EXTVLCOPT:network-caching={cache_ms}")
+        lines.append(f"#EXTVLCOPT:live-caching={cache_ms}")
         lines.append(f'#EXTHTTP:{{"user-agent":"{ua_str}"}}')
         lines.append(link)
         lines.append("")
