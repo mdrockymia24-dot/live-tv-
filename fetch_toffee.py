@@ -415,10 +415,15 @@ def build_m3u(
     """স্ট্যান্ডার্ড ও ক্লিন M3U প্লেলিস্ট তৈরি করে"""
     ua_str = "okhttp/5.1.0"
 
+    import datetime
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    bst_time = (now_utc + datetime.timedelta(hours=6)).strftime("%Y-%m-%d %I:%M:%S %p BST")
+
     lines = [
         '#EXTM3U url-tvg="https://avkb.short.gy/tsepg.xml.gz"',
         "#===================================================",
         "# Toffee Live IPTV Playlist (Full All Channels)",
+        f"# Last Updated: {bst_time}",
         "# Status: Free + Premium All Unlocked for VLC",
         "# Powered by Official Direct Engine & Paid Subscriber Tokens",
         "# Compatible: VLC Player, TiviMate, OTT Navigator",
