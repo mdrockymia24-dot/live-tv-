@@ -2,9 +2,9 @@ name: Auto Update Toffee M3U Playlist
 
 on:
   schedule:
-    # Runs automatically every 1 hour at minute 23 (avoids top-of-hour congestion on GitHub)
-    - cron: '23 * * * *'
-  workflow_dispatch: # Allows manual trigger button from GitHub Actions tab
+    # Runs every 20 minutes to guarantee fresh tokens before the 60-min expiration
+    - cron: '*/20 * * * *'
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -46,6 +46,6 @@ jobs:
             echo "No changes in toffee.m3u, skipping commit."
           else
             git commit -m "Auto-update toffee.m3u playlist [skip ci]"
-            git push origin HEAD:${{ github.ref_name }} || git push
+            git pull --rebase origin main || true
+            git push origin HEAD:main
           fi
-
